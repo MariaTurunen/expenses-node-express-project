@@ -6,9 +6,12 @@ Most of us want to know where our money goes. An application for tracking your p
 
 **OR**
 
-## General Project to see on render
+## General Project to see on render server
 
 Backend server address and implemented endpoints
+https://expenses-node-express-api.onrender.com/api/expenses
+
+### Screenshot
 
 
 ## Frontend server address (not done yet)
@@ -17,19 +20,25 @@ Upcoming...
 
 ## Instructions for running the application locally
 
-### Node instructions
+#### Node instructions
 
 **Install npm packages**
+`npm install`
 
-'npm install'
+**Start the backend port**
+`npm run start`
 
-**Start**
-
-´npm run start´
+**See outcome on**
+http://localhost:5000/api/expenses
 
 **Test enpoints**
-
 `npm run test`
+
+**to POST new expense**
+
+**to UPDATE new expense**
+
+
 
 ### SQL statements for creating and adding default data
 ```
@@ -43,7 +52,7 @@ CREATE TABLE IF NOT EXISTS money_manager (
   updated timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 );
--- Insert values to table, id, created and updated colums will autocreate
+-- Insert values to table, id, created and updated columns will be autocreated
 INSERT INTO money_manager ( amount, category, shop)
 VALUES (
     '8.95',
@@ -58,15 +67,15 @@ VALUES (
   );
 INSERT INTO money_manager ( amount, category, shop)
 VALUES (
-    '20.00',
-    'crocery',
-    'Prisma'
+    '200.00',
+    'vacation',
+    'Finnair'
   );
 INSERT INTO money_manager ( amount, category, shop)
 VALUES (
     '100.20',
     'crocery',
-    'Prisma'
+    'Lidl'
   );
 
 ```
