@@ -1,17 +1,22 @@
-## FOR TAMK course 4A00EZ62 Backend Development - Final Project
+## For TAMK course 4A00EZ62 Backend Development - Final Project
 
 ## Topic
 
 Most of us want to know where our money goes. An application for tracking your personal expenses.
+You can add amount, category and shop on database table money_manager with.....
 
-**OR**
+SCREENSHOT HERE
+![image](./images/money_manager-table.png)
+
 
 ## General Project to see on render server
 
-Backend server address and implemented endpoints
+Backend server address and implemented endpoints ..
+
 https://expenses-node-express-api.onrender.com/api/expenses
 
-### Screenshot
+### Screenshot from render
+
 
 
 ## Frontend server address (not done yet)
@@ -33,6 +38,21 @@ http://localhost:5000/api/expenses
 
 **Test enpoints**
 `npm run test`
+
+Endpoints routes tested:
+GET
+POST
+PUT
+DELETE
+
+Validation:
+POST - √ should not allow negative amounts
+       √ should not allow zero amounts
+       √ should not allow string as amount
+PUT - upcoming ..
+        should allow only string as category or shop
+
+
 ![image](https://user-images.githubusercontent.com/98017948/212475730-509ed327-e558-4c1a-92ba-d1a040842609.png)
 
 
