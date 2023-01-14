@@ -13,8 +13,23 @@ Backend server address and implemented endpoints
 
 ## Frontend server address (not done yet)
 
+Upcoming...
+
 ## Instructions for running the application locally
+
 ### Node instructions
+
+**Install npm packages**
+
+'npm install'
+
+**Start**
+
+´npm run start´
+
+**Test enpoints**
+
+`npm run test`
 
 ### SQL statements for creating and adding default data
 ```
