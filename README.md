@@ -33,6 +33,9 @@ http://localhost:5000/api/expenses
 
 **Test enpoints**
 `npm run test`
+![image](https://user-images.githubusercontent.com/98017948/212475730-509ed327-e558-4c1a-92ba-d1a040842609.png)
+
+
 
 **to POST new expense**
 
