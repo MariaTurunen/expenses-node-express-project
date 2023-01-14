@@ -15,7 +15,7 @@ Backend server address and implemented endpoints ..
 
 https://expenses-node-express-api.onrender.com/api/expenses
 
-### Screenshot from render
+#### Screenshot from render
 
 
 
@@ -27,16 +27,16 @@ Upcoming...
 
 #### Node instructions
 
-**Install npm packages**
+##### Install npm packages
 `npm install`
 
-**Start the backend port**
+##### Start the backend port
 `npm run start`
 
-**See outcome on**
+##### See outcome on**
 http://localhost:5000/api/expenses
 
-**Test enpoints**
+##### Test enpoints**
 `npm run test`
 
 Endpoints routes tested:
@@ -57,9 +57,9 @@ PUT - upcoming ..
 
 
 
-**to POST new expense**
+##### to POST new expense**
 
-**to UPDATE new expense**
+ ##### to UPDATE new expense**
 
 
 
@@ -103,5 +103,6 @@ VALUES (
 
 ```
 
-## Project self evaluation,
+## Project self evaluation
+
 use project evaluation criteria (see Evaluation section)
