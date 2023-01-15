@@ -20,7 +20,10 @@
     }
 
     const postExpense = async (expense) => {
-      const conf = { method: 'POST', headers: { "Content-type": "application/json" }, body: JSON.stringify(expense) }
+      const conf = { method: 'POST',
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(expense) }
+
       let response = await fetch(URL, conf)
       let json = await response.json()
       console.log(json)
@@ -29,8 +32,10 @@
 
     const deleteExpense = async (id) => {
       const conf = { method: 'DELETE' }
-      let response = await fetch(URL + "/" + id, conf)
+      let response = await fetch("/api/expenses/" + id, conf)
       console.log(response.status)
+
+
     }
 
     window.addEventListener("load", () => {
@@ -39,7 +44,7 @@
         amount: "150.00",
         category: "Test category",
         shop: "Test shop", }))
-      document.querySelector('#delete').addEventListener("click", () => deleteExpense(postId))
+      document.querySelector('#delete').addEventListener("click", () => deleteExpense(151))
 
     })
   </script>
