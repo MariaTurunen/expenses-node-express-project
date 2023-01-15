@@ -61,14 +61,14 @@ Endpoints routes tested and working:
 
 Validation:
 1. POST  -
-[x] √ should not allow negative amounts
-[x] √ should not allow zero amounts
-[x] √ should not allow string as amount
+- [√] should not allow negative amounts
+- [√] should not allow zero amounts
+- [√] should not allow string as amount
 2. PUT - upcoming ..
-[ ] should allow only string as category or shop
+- [ ] should allow only string as category or shop
 
 
-![image](https://user-images.githubusercontent.com/98017948/212475730-509ed327-e558-4c1a-92ba-d1a040842609.png)
+![image](./images/test.png.png)
 
 
 ## SQL statements for creating and adding default data
