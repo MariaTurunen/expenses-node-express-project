@@ -114,6 +114,11 @@ VALUES (
 ```
 ## OpenAPI/Swagger documentation for API.
 
+Found in files:
+openapi.json 
+or
+openapi.yaml
+
 
 ## Project self evaluation
 
