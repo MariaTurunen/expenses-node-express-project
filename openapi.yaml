@@ -1,0 +1,189 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: expenses-node-express-api
+  description: Final project for TAMK Backend Development course. Tracking your costs in TAMK database. Server runninng on https://expenses-node-express-api.onrender.com/
+    Public Git Hub repository https://github.com/MariaTurunen/expenses-node-express-project
+servers:
+  - url: https://expenses-node-express-api.onrender.com
+paths:
+  /expenses:
+    get:
+      description: Returns a list of expenses
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    amount:
+                      type: string
+                    category:
+                      type: string
+                    shop:
+                      type: string
+                    created:
+                      type: string
+                    updated:
+                      type: string
+        '500':
+          $ref: '#/components/responses/500Error'
+    post:
+      description: Creates a new city
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object 
+              properties:
+                amount:
+                  type: string
+                category:
+                  type: string
+                shop:
+                  type: string
+      responses:
+        '201':
+          description: Created succesfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:   
+                    id:
+                      type: integer
+                    amount:
+                      type: string
+                    category:
+                      type: string
+                    shop:
+                      type: string
+                    created:
+                      type: string
+                    updated:
+                      type: string
+        '400':
+          $ref: '#/components/responses/400Error'
+        '404':
+          $ref: '#/components/responses/404Error'
+        '500':
+          $ref: '#/components/responses/500Error'
+
+    put:
+      description: Updates an exsting expense
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object 
+              properties:
+                id:
+                  type: integer
+                amount:
+                  type: string
+                category:
+                  type: string
+                shop:
+                  type: string
+            
+      responses:
+        '200':
+          description: Updated succesfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Expense'
+        '400':
+          $ref: '#/components/responses/400Error'
+        '404':
+          $ref: '#/components/responses/404Error'
+        '500':
+          $ref: '#/components/responses/500Error'
+
+  /expenses/{id}:
+    get:
+      description: return information about a specific expense by id number
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successfully returned a expense
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Expense'
+        '400':
+          $ref: '#/components/responses/400Error'
+        '404':
+          $ref: '#/components/responses/404Error'
+        '500':
+          $ref: '#/components/responses/500Error'
+    delete:
+      description: Delete a specific city
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Expense deleted
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: expense deleted
+
+components:
+  schemas:
+    Expense:
+      type: object
+      properties:   
+          id:
+            type: integer
+          amount:
+            type: string
+          category:
+            type: string
+          shop:
+            type: string
+          created:
+            type: string
+          updated:
+            type: string
+      
+  responses:
+    400Error:
+      description: Invalid request
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: Invalid value
+    404Error:
+      description: Not found
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: Not found
+    500Error:
+      description: Internal error
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: Internal error
