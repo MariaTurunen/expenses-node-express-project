@@ -35,13 +35,13 @@ paths:
         '500':
           $ref: '#/components/responses/500Error'
     post:
-      description: Creates a new city
+      description: Creates a new expense
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              type: object 
+              type: object
               properties:
                 amount:
                   type: string
@@ -56,7 +56,7 @@ paths:
             application/json:
               schema:
                 type: object
-                properties:   
+                properties:
                     id:
                       type: integer
                     amount:
@@ -83,7 +83,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object 
+              type: object
               properties:
                 id:
                   type: integer
@@ -93,7 +93,7 @@ paths:
                   type: string
                 shop:
                   type: string
-            
+
       responses:
         '200':
           description: Updated succesfully
@@ -131,7 +131,7 @@ paths:
         '500':
           $ref: '#/components/responses/500Error'
     delete:
-      description: Delete a specific city
+      description: Delete a specific expense
       parameters:
         - name: id
           in: path
@@ -151,7 +151,7 @@ components:
   schemas:
     Expense:
       type: object
-      properties:   
+      properties:
           id:
             type: integer
           amount:
@@ -164,7 +164,7 @@ components:
             type: string
           updated:
             type: string
-      
+
   responses:
     400Error:
       description: Invalid request

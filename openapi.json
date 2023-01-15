@@ -54,7 +54,7 @@
         }
       },
       "post": {
-        "description": "Creates a new city",
+        "description": "Creates a new expense",
         "requestBody": {
           "required": true,
           "content": {
@@ -203,7 +203,7 @@
         }
       },
       "delete": {
-        "description": "Delete a specific city",
+        "description": "Delete a specific expense",
         "parameters": [
           {
             "name": "id",
