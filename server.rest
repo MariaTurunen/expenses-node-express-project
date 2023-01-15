@@ -1,7 +1,8 @@
 
 GET https://expenses-node-express-api.onrender.com/api/expenses/
 ###
-GET https://expenses-node-express-api.onrender.com/api/expenses/1
+GET https://expenses-node-express-api.onrender.com/api/expenses/4
+
 
 ###
 #  'INSERT INTO money_manager SET ?'
@@ -28,10 +29,10 @@ PUT https://expenses-node-express-api.onrender.com/api/expenses/ HTTP/1.1
 content-type: application/json
 
 {
-  "amount": 500.00,
-  "category": "vacation",
-  "shop": "Finnair",
-  "id": 149
+  "amount": 35.00,
+  "category": "grocery",
+  "shop": "K-market",
+  "id": 150
 }
 ###
 DELETE https://expenses-node-express-api.onrender.com/api/expenses/149
