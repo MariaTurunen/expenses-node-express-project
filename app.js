@@ -7,6 +7,7 @@ const expensesRouter = require('./routes/expenses');
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: ['http://localhost:5000', 'https://expenses-node-express-api.onrender.com'] }));
+app.use(express.static('public'));
 // use controller
 app.use('/api/expenses', expensesRouter);
 
