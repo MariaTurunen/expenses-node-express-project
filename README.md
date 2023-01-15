@@ -11,7 +11,9 @@ money_manager
 
 ## General Project is not finished.
 
-Backend server address and implemented endpoints
+### Backend server address and implemented endpoints
+
+-> server.rest file: 
 + GET all
 + GET one by id
 + POST
