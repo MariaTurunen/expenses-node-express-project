@@ -5,18 +5,18 @@
 Most of us want to know where our money goes. An application for tracking your personal expenses.
 You can add amount, category and shop on database table money_manager.
 
-SCREENSHOT HERE
+money_manager
 ![image](./images/money_manager-table.png)
 
 
 ## General Project is not finished.
 
 Backend server address and implemented endpoints
-GET all
-GET one by id
-POST
-PUT
-DELETE one by id
++ GET all
++ GET one by id
++ POST
++ PUT
++ DELETE one by id
 
 https://expenses-node-express-api.onrender.com/api/expenses
 
@@ -30,47 +30,48 @@ https://expenses-node-express-api.onrender.com/api/expenses
 Upcoming... better view...
 https://expenses-node-express-api.onrender.com/api/expenses
 
-GET button - GET all expenses
-POST button - POST amount
-DELETE button - Not working at the moment!
++ GET button - GET all expenses
++ POST button - POST amount
++ DELETE button - Not working at the moment!
 
 ## Instructions for running the application locally
 
 #### Node instructions
 
-##### Install npm packages
+##### -> Install npm packages
 `npm install`
 
-##### Start the backend port
+##### -> Start the backend port
 `npm run start`
 
-##### endpoints manipulation on file
+##### -> endpoints manipulation on file
 localhost.rest
 
-##### See outcome on
+##### -> See outcome on
 http://localhost:5000/api/expenses
 
-##### intergration tests to enpoints**
+##### -> intergration tests to enpoints**
 `npm run test`
 
 Endpoints routes tested and working:
-GET
-POST
-PUT
-DELETE
++ GET
++ POST
++ PUT
++ DELETE
 
 Validation:
-POST - √ should not allow negative amounts
-       √ should not allow zero amounts
-       √ should not allow string as amount
-PUT - upcoming ..
-        should allow only string as category or shop
+1. POST  -
+[x] √ should not allow negative amounts
+[x] √ should not allow zero amounts
+[x] √ should not allow string as amount
+2. PUT - upcoming ..
+[ ] should allow only string as category or shop
 
 
 ![image](https://user-images.githubusercontent.com/98017948/212475730-509ed327-e558-4c1a-92ba-d1a040842609.png)
 
 
-### SQL statements for creating and adding default data
+## SQL statements for creating and adding default data
 ```
 -- Create Table
 CREATE TABLE IF NOT EXISTS money_manager (
@@ -111,8 +112,10 @@ VALUES (
 ```
 ## OpenAPI/Swagger documentation for API.
 
+
 ## Project self evaluation
 
+Self evaluation = 2
 
 ![image](./images/self-evaluation.png)
 
