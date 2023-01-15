@@ -3,25 +3,36 @@
 ## Topic
 
 Most of us want to know where our money goes. An application for tracking your personal expenses.
-You can add amount, category and shop on database table money_manager with.....
+You can add amount, category and shop on database table money_manager.
 
 SCREENSHOT HERE
 ![image](./images/money_manager-table.png)
 
 
-## General Project to see on render server
+## General Project is not finished.
 
-Backend server address and implemented endpoints ..
+Backend server address and implemented endpoints
+GET all
+GET one by id
+POST
+PUT
+DELETE one by id
 
 https://expenses-node-express-api.onrender.com/api/expenses
 
 #### Screenshot from render
 
+![image](./images/onrender-screen.png)
 
 
-## Frontend server address (not done yet)
+### Frontend server address (not done yet)
 
-Upcoming...
+Upcoming... better view...
+https://expenses-node-express-api.onrender.com/api/expenses
+
+GET button - GET all expenses
+POST button - POST amount
+DELETE button - Not working at the moment!
 
 ## Instructions for running the application locally
 
@@ -33,13 +44,16 @@ Upcoming...
 ##### Start the backend port
 `npm run start`
 
-##### See outcome on**
+##### endpoints manipulation on file
+localhost.rest
+
+##### See outcome on
 http://localhost:5000/api/expenses
 
-##### Test enpoints**
+##### intergration tests to enpoints**
 `npm run test`
 
-Endpoints routes tested:
+Endpoints routes tested and working:
 GET
 POST
 PUT
@@ -54,13 +68,6 @@ PUT - upcoming ..
 
 
 ![image](https://user-images.githubusercontent.com/98017948/212475730-509ed327-e558-4c1a-92ba-d1a040842609.png)
-
-
-
-##### to POST new expense**
-
- ##### to UPDATE new expense**
-
 
 
 ### SQL statements for creating and adding default data
@@ -102,7 +109,13 @@ VALUES (
   );
 
 ```
+## OpenAPI/Swagger documentation for API.
 
 ## Project self evaluation
 
-use project evaluation criteria (see Evaluation section)
+
+![image](./images/self-evaluation.png)
+
+## Licence
+
+MIT © Maria Turunen
