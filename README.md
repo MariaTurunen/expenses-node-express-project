@@ -68,7 +68,7 @@ Validation:
 - [ ] should allow only string as category or shop
 
 
-![image](./images/test.png.png)
+![image](./images/test.png)
 
 
 ## SQL statements for creating and adding default data
