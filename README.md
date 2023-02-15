@@ -9,11 +9,11 @@ money_manager
 ![image](./images/money_manager-table.png)
 
 
-## General Project is not finished.
+## General Project is not finished...
 
 ### Backend server address and implemented endpoints
 
--> server.rest file: 
+-> server.rest file:
 + GET all
 + GET one by id
 + POST
@@ -27,7 +27,7 @@ https://expenses-node-express-api.onrender.com/api/expenses
 ![image](./images/onrender-screen.png)
 
 
-### Frontend server address (not done yet)
+### Frontend server address (not done yet)!!
 
 Upcoming... better view...
 https://expenses-node-express-api.onrender.com/api/expenses
@@ -37,6 +37,16 @@ https://expenses-node-express-api.onrender.com/api/expenses
 + DELETE button - Not working at the moment!
 
 ## Instructions for running the application locally
+
+#### -> Create your own .ENV file
+With following variables
+
+```
+DB_HOST =
+DB_USER =
+DB_PASSWORD =
+DB_DB =
+```
 
 #### Node instructions
 
@@ -52,8 +62,9 @@ localhost.rest
 ##### -> See outcome on
 http://localhost:5000/api/expenses
 
-##### -> intergration tests to enpoints**
+##### -> Intergration tests to enpoints
 `npm run test`
+
 
 Endpoints routes tested and working:
 + GET
@@ -115,16 +126,17 @@ VALUES (
 ## OpenAPI/Swagger documentation for API.
 
 Found in files:
-openapi.json 
+openapi.json
 or
 openapi.yaml
 
 
-## Project self evaluation
+## Project evaluation
 
-Self evaluation = 2
+Self evaluation = 3/5
 
-![image](./images/self-evaluation.png)
+API Backend project final grade = 5 (added more than expected)
+
 
 ## Licence
 
