@@ -73,12 +73,12 @@ Endpoints routes tested and working:
 + DELETE
 
 Validation:
-1. POST  -
-- [√] should not allow negative amounts
-- [√] should not allow zero amounts
-- [√] should not allow string as amount
-2. PUT - upcoming ..
-- [ ] should allow only string as category or shop
+1. POST  - \
+[√] should not allow negative amounts \
+[√] should not allow zero amounts \
+[√] should not allow string as amount \
+2. PUT - upcoming .. \
+[-] should allow only string as category or shop
 
 
 ![image](./images/test.png)
@@ -125,7 +125,7 @@ VALUES (
 ```
 ## OpenAPI/Swagger documentation for API.
 
-Found in files:
+can be found in the folder:
 openapi.json
 or
 openapi.yaml
@@ -135,7 +135,7 @@ openapi.yaml
 
 Self evaluation = 3/5
 
-API Backend project final grade = 5 (added more than expected)
+API Backend course final grade = 5/5 
 
 
 ## Licence
